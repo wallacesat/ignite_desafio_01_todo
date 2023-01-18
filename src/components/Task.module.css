@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  gap: 0.75rem;
+}
+
+.wrapper > span {
+  flex: 1;
+  font-size: 0.875rem;
+  line-height: 140%;
+  margin-top: -3px;
+}
+
+.wrapper > button {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.wrapper > button:hover {
+  color: var(--red-500);
+  background: var(--gray-400);
+}
+
+.taskCompleted {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}

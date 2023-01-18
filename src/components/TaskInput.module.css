@@ -1,0 +1,76 @@
+.wrapper {
+  display: flex;
+  margin-top: -1.6875rem;
+}
+
+.wrapper > input {
+  height: 3.375rem;
+  flex: 1;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  padding: 1rem;
+  line-height: 1.4rem;
+}
+
+.wrapper > input:focus {
+  border-color: transparent;
+}
+
+.wrapper > input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--gray-300);
+  opacity: 1; /* Firefox */
+}
+
+.wrapper > input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--gray-300);
+}
+
+.wrapper > input::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--gray-300);
+}
+
+.wrapper > button {
+  display: flex;
+  align-items: center;
+  border: 0;
+  background: var(--blue-700);
+  padding: 1rem;
+  gap: 8px;
+  border-radius: 8px;
+  color: var(--gray-100);
+  cursor: pointer;
+}
+
+.wrapper > button span {
+  font-weight: bold;
+  line-height: 0;
+  font-size: 0.875rem;
+}
+
+.wrapper > button:hover {
+  background: var(--blue-500);
+}
+
+.wrapper > button.disabled {
+  cursor: not-allowed;
+  background: var(--blue-700);
+  filter: brightness(50%);
+}
+
+@media (max-width: 347px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .wrapper > input {
+    margin-right: 0;
+  }
+
+  .wrapper > button {
+    justify-content: center;
+  }
+}

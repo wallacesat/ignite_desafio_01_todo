@@ -1,0 +1,49 @@
+.todoList {
+  margin-top: 4rem;
+  display: block;
+}
+
+.todoList header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.todoList header .createdTasks,
+.todoList header .completedTasks {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.todoList header .createdTasks > strong,
+.todoList header .completedTasks > strong  {
+  font-size: 0.875rem;
+}
+
+.todoList header .createdTasks > strong {
+  color: var(--blue-500);
+}
+
+.todoList header .completedTasks > strong {
+  color: var(--purple-500);
+}
+
+.tasksList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 310px) {
+  .todoList {
+    margin-top: 1.5rem;
+  }
+
+  .todoList header {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
